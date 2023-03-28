@@ -3,7 +3,7 @@ import data from './data';
 
 const App = () => {
   const [count, setCount] = useState(1);
-  const [text, setText] = useState();
+  const [text, setText] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
     setText(data.slice(0, count));
